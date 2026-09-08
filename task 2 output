@@ -1,0 +1,65 @@
+
+==============================
+      STOCK TRADING PLATFORM
+==============================
+1. View Market
+2. Buy Stock
+3. View Portfolio
+4. View Balance
+5. Exit
+Enter your choice: 1
+
+------ MARKET DATA ------
+TCS - Tata Consultancy Services - ₹3500.0
+INFY - Infosys - ₹1500.0
+RELIANCE - Reliance Industries - ₹2800.0
+HDFC - HDFC Bank - ₹1700.0
+
+==============================
+      STOCK TRADING PLATFORM
+==============================
+1. View Market
+2. Buy Stock
+3. View Portfolio
+4. View Balance
+5. Exit
+Enter your choice: 2
+Enter stock symbol: reliance
+Enter quantity: 2
+Stock purchased successfully!
+
+==============================
+      STOCK TRADING PLATFORM
+==============================
+1. View Market
+2. Buy Stock
+3. View Portfolio
+4. View Balance
+5. Exit
+Enter your choice: 3
+
+------ MY PORTFOLIO ------
+RELIANCE - ₹2800.0
+RELIANCE - ₹2800.0
+
+==============================
+      STOCK TRADING PLATFORM
+==============================
+1. View Market
+2. Buy Stock
+3. View Portfolio
+4. View Balance
+5. Exit
+Enter your choice: 4
+Available Balance: ₹4400.0
+
+==============================
+      STOCK TRADING PLATFORM
+==============================
+1. View Market
+2. Buy Stock
+3. View Portfolio
+4. View Balance
+5. Exit
+Enter your choice: 5
+Thank you for using Stock Trading Platform!
