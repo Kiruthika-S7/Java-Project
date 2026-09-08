@@ -1,0 +1,130 @@
+package studentgradetracker;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Student {
+
+    String name;
+    int mark;
+
+    Student(String name, int mark) {
+        this.name = name;
+        this.mark = mark;
+    }
+
+    String getGrade() {
+        if (mark >= 90)
+            return "A";
+        else if (mark >= 80)
+            return "B";
+        else if (mark >= 70)
+            return "C";
+        else if (mark >= 60)
+            return "D";
+        else
+            return "F";
+    }
+}
+
+public class StudentGradeTracker {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Student> students = new ArrayList<>();
+
+        int choice;
+
+        do {
+            System.out.println("\n================================");
+            System.out.println("       STUDENT GRADE TRACKER");
+            System.out.println("================================");
+            System.out.println("1. Add Student");
+            System.out.println("2. View Student Report");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+
+            choice = sc.nextInt();
+            sc.nextLine();
+
+            if (choice == 1) {
+
+                System.out.print("Enter student name: ");
+                String name = sc.nextLine();
+
+                System.out.print("Enter mark: ");
+                int mark = sc.nextInt();
+                sc.nextLine();
+
+                students.add(new Student(name, mark));
+
+                System.out.println("Student added successfully!");
+
+            } else if (choice == 2) {
+
+                if (students.isEmpty()) {
+
+                    System.out.println("No student records available.");
+
+                } else {
+
+                    int total = 0;
+                    int highest = students.get(0).mark;
+                    int lowest = students.get(0).mark;
+
+                    String highestStudent = students.get(0).name;
+                    String lowestStudent = students.get(0).name;
+
+                    System.out.println("\n================================");
+                    System.out.println("        STUDENT REPORT");
+                    System.out.println("================================");
+
+                    System.out.println("Name\t\tMark\tGrade");
+                    System.out.println("--------------------------------");
+
+                    for (Student student : students) {
+
+                        System.out.println(student.name + "\t\t"
+                                + student.mark + "\t"
+                                + student.getGrade());
+
+                        total = total + student.mark;
+
+                        if (student.mark > highest) {
+                            highest = student.mark;
+                            highestStudent = student.name;
+                        }
+
+                        if (student.mark < lowest) {
+                            lowest = student.mark;
+                            lowestStudent = student.name;
+                        }
+                    }
+
+                    double average = (double) total / students.size();
+
+                    System.out.println("--------------------------------");
+                    System.out.printf("Average Mark : %.2f%n", average);
+                    System.out.println("Highest Mark : " + highest
+                            + " (" + highestStudent + ")");
+                    System.out.println("Lowest Mark  : " + lowest
+                            + " (" + lowestStudent + ")");
+
+                }
+
+            } else if (choice == 3) {
+
+                System.out.println("Thank you for using Student Grade Tracker!");
+
+            } else {
+
+                System.out.println("Invalid choice. Please try again.");
+
+            }
+
+        } while (choice != 3);
+
+        sc.close();
+    }
+}
