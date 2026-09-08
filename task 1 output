@@ -1,0 +1,51 @@
+
+================================
+       STUDENT GRADE TRACKER
+================================
+1. Add Student
+2. View Student Report
+3. Exit
+Enter your choice: 1
+Enter student name: keerthi
+Enter mark: 90
+Student added successfully!
+
+================================
+       STUDENT GRADE TRACKER
+================================
+1. Add Student
+2. View Student Report
+3. Exit
+Enter your choice: 1
+Enter student name: paramu
+Enter mark: 60
+Student added successfully!
+
+================================
+       STUDENT GRADE TRACKER
+================================
+1. Add Student
+2. View Student Report
+3. Exit
+Enter your choice: 2
+
+================================
+        STUDENT REPORT
+================================
+Name		Mark	Grade
+--------------------------------
+keerthi		90	A
+paramu		60	D
+--------------------------------
+Average Mark : 75.00
+Highest Mark : 90 (keerthi)
+Lowest Mark  : 60 (paramu)
+
+================================
+       STUDENT GRADE TRACKER
+================================
+1. Add Student
+2. View Student Report
+3. Exit
+Enter your choice: 3
+Thank you for using Student Grade Tracker!
